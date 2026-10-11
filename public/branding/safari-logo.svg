@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <!-- Circular text paths -->
+    <path id="textArcTop" d="M 40,150 A 110,110 0 1,1 260,150" fill="none" />
+    <path id="textArcBottom" d="M 260,150 A 110,110 0 0,1 40,150" fill="none" />
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E8B57" />
+      <stop offset="100%" stop-color="#123D2B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="150" cy="150" r="142" fill="#FFFFFF" stroke="#2E8B57" stroke-width="5" />
+  <circle cx="150" cy="150" r="134" fill="#FFFFFF" stroke="#84CC16" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+
+  <!-- Top Amharic Text: ሳፋሪ አካዳሚ -->
+  <text font-family="'Noto Sans Ethiopic', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="28" fill="#1D5A40" letter-spacing="4">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      ሳፋሪ አካዳሚ
+    </textPath>
+  </text>
+
+  <!-- Mascot (Safari Bear Icon) -->
+  <g transform="translate(150, 150) scale(0.92) translate(-65, -75)">
+    <!-- Ears -->
+    <ellipse cx="42" cy="38" rx="14" ry="14" fill="#8B4513" stroke="#5C2E0B" stroke-width="2.5" />
+    <ellipse cx="42" cy="38" rx="8" ry="8" fill="#D2996E" />
+    <ellipse cx="88" cy="38" rx="14" ry="14" fill="#8B4513" stroke="#5C2E0B" stroke-width="2.5" />
+    <ellipse cx="88" cy="38" rx="8" ry="8" fill="#D2996E" />
+
+    <!-- Head -->
+    <path d="M 36,65 C 32,45 50,32 65,32 C 80,32 98,45 94,65 C 98,85 86,102 65,102 C 44,102 32,85 36,65 Z" fill="#9C531F" stroke="#5C2E0B" stroke-width="2.5" />
+
+    <!-- Muzzle / Snout -->
+    <ellipse cx="65" cy="74" rx="20" ry="15" fill="#E8B888" stroke="#5C2E0B" stroke-width="1.5" />
+    <!-- Nose -->
+    <path d="M 60,66 C 63,64 67,64 70,66 C 72,69 68,72 65,72 C 62,72 58,69 60,66 Z" fill="#2E1805" />
+    <!-- Smile -->
+    <path d="M 58,76 Q 65,83 72,76" fill="none" stroke="#2E1805" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Eyes -->
+    <ellipse cx="53" cy="54" rx="6" ry="9" fill="#FFFFFF" stroke="#5C2E0B" stroke-width="1.5" />
+    <ellipse cx="55" cy="54" rx="3.5" ry="5.5" fill="#1C140D" />
+    <circle cx="56" cy="52" r="1.5" fill="#FFFFFF" />
+
+    <ellipse cx="77" cy="54" rx="6" ry="9" fill="#FFFFFF" stroke="#5C2E0B" stroke-width="1.5" />
+    <ellipse cx="75" cy="54" rx="3.5" ry="5.5" fill="#1C140D" />
+    <circle cx="76" cy="52" r="1.5" fill="#FFFFFF" />
+
+    <!-- Cheerful Eyebrows -->
+    <path d="M 48,44 Q 53,41 58,45" fill="none" stroke="#5C2E0B" stroke-width="2" stroke-linecap="round" />
+    <path d="M 72,45 Q 77,41 82,44" fill="none" stroke="#5C2E0B" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Body / Torso -->
+    <path d="M 50,96 C 45,106 42,126 52,142 C 60,150 70,150 78,142 C 88,126 85,106 80,96 Z" fill="#9C531F" stroke="#5C2E0B" stroke-width="2.5" />
+    <!-- Tummy Patch -->
+    <ellipse cx="65" cy="122" rx="14" ry="18" fill="#E8B888" />
+
+    <!-- Left Arm (waving forward) -->
+    <path d="M 48,102 C 34,106 24,116 26,126 C 28,132 36,132 40,124 C 44,118 48,112 50,108" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+
+    <!-- Right Arm (swinging back) -->
+    <path d="M 80,104 C 94,110 104,118 100,128 C 98,134 90,132 86,124 C 82,118 80,112 78,108" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+
+    <!-- Left Leg (stepping forward) -->
+    <path d="M 53,138 C 45,148 30,156 22,160 C 18,162 20,168 28,168 C 42,168 54,154 58,144" fill="#9C531F" stroke="#5C2E0B" stroke-width="2.5" />
+
+    <!-- Right Leg (stepping back) -->
+    <path d="M 75,138 C 82,148 94,154 104,158 C 110,160 110,166 102,166 C 88,166 78,154 72,144" fill="#9C531F" stroke="#5C2E0B" stroke-width="2.5" />
+  </g>
+
+  <!-- Bottom English Text: Safari Academy -->
+  <text font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="25" fill="#1D5A40" letter-spacing="2">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      Safari Academy
+    </textPath>
+  </text>
+</svg>

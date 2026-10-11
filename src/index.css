@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-ethiopic: 'Noto Sans Ethiopic', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Safari Academy Brand Design Tokens */
+  --safari-primary: #123D2B;
+  --safari-secondary: #1D5A40;
+  --safari-accent: #2E8B57;
+  --safari-light-accent: #E8F5E9;
+  --safari-bg: #F7F9F6;
+  --safari-surface: #FFFFFF;
+  --safari-text-main: #17251D;
+  --safari-text-muted: #65736A;
+  --safari-border: #E1E8E1;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--safari-bg);
+  color: var(--safari-text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-ethiopic {
+  font-family: var(--font-ethiopic);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Stylesheet for Official Reports & Transcripts */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page-break {
+    page-break-before: always;
+  }
+}
+

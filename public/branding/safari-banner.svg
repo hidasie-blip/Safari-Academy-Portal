@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="sunburst" cx="60%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="40%" stop-color="#FDE047" />
+      <stop offset="80%" stop-color="#84CC16" />
+      <stop offset="100%" stop-color="#4D7C0F" />
+    </radialGradient>
+
+    <!-- Pattern Mesh Overlay -->
+    <pattern id="hexPattern" width="40" height="40" patternUnits="userSpaceOnUse" opacity="0.12">
+      <path d="M20,0 L40,10 L40,30 L20,40 L0,30 L0,10 Z" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+    </pattern>
+
+    <!-- Colorful Gradients for Letters -->
+    <linearGradient id="gradRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="gradPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </linearGradient>
+    <linearGradient id="gradPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#BE185D" />
+    </linearGradient>
+    <linearGradient id="gradCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0E7490" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="textDropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.38" />
+    </filter>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect width="1000" height="320" fill="url(#sunburst)" />
+  <rect width="1000" height="320" fill="url(#hexPattern)" />
+
+  <!-- Botanical corner flourish -->
+  <g opacity="0.35" fill="#14532D">
+    <path d="M0,320 Q60,240 0,160 Q80,220 0,320 Z" />
+    <path d="M0,320 Q120,270 20,200 Q90,260 0,320 Z" />
+    <path d="M1000,0 Q920,80 1000,160 Q940,90 1000,0 Z" />
+  </g>
+
+  <!-- Left Round Logo Badge -->
+  <g transform="translate(100, 140)" filter="url(#badgeShadow)">
+    <circle cx="0" cy="0" r="75" fill="#FFFFFF" stroke="#15803D" stroke-width="4" />
+    <circle cx="0" cy="0" r="70" fill="#FFFFFF" stroke="#84CC16" stroke-width="1.5" stroke-dasharray="2 2" />
+
+    <!-- Bear Mascot Miniature -->
+    <g transform="scale(0.55) translate(-65, -80)">
+      <ellipse cx="42" cy="38" rx="14" ry="14" fill="#8B4513" stroke="#5C2E0B" stroke-width="2" />
+      <ellipse cx="88" cy="38" rx="14" ry="14" fill="#8B4513" stroke="#5C2E0B" stroke-width="2" />
+      <path d="M 36,65 C 32,45 50,32 65,32 C 80,32 98,45 94,65 C 98,85 86,102 65,102 C 44,102 32,85 36,65 Z" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+      <ellipse cx="65" cy="74" rx="20" ry="15" fill="#E8B888" />
+      <ellipse cx="53" cy="54" rx="5" ry="7" fill="#1C140D" />
+      <ellipse cx="77" cy="54" rx="5" ry="7" fill="#1C140D" />
+      <path d="M 50,96 C 45,106 42,126 52,142 C 60,150 70,150 78,142 C 88,126 85,106 80,96 Z" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+      <ellipse cx="65" cy="122" rx="12" ry="16" fill="#E8B888" />
+      <path d="M 53,138 C 45,148 30,156 22,160 C 18,162 20,168 28,168 C 42,168 54,154 58,144" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+      <path d="M 75,138 C 82,148 94,154 104,158 C 110,160 110,166 102,166 C 88,166 78,154 72,144" fill="#9C531F" stroke="#5C2E0B" stroke-width="2" />
+    </g>
+
+    <!-- Text inside badge -->
+    <text x="0" y="-50" font-family="'Noto Sans Ethiopic', sans-serif" font-weight="700" font-size="14" fill="#15803D" text-anchor="middle">ሳፋሪ አካዳሚ</text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#15803D" text-anchor="middle">Safari Academy</text>
+  </g>
+
+  <!-- Large Amharic School Name Header: ሳፋሪ አካዳሚ -->
+  <g transform="translate(560, 95)" text-anchor="middle" font-family="'Noto Sans Ethiopic', system-ui, sans-serif" font-size="74" font-weight="900" filter="url(#textDropShadow)">
+    <text x="-210" y="0" fill="url(#gradRed)" stroke="#FFFFFF" stroke-width="3">ሳ</text>
+    <text x="-135" y="0" fill="url(#gradBlue)" stroke="#FFFFFF" stroke-width="3">ፋ</text>
+    <text x="-60" y="0" fill="url(#gradGreen)" stroke="#FFFFFF" stroke-width="3">ሪ</text>
+    <text x="50" y="0" fill="url(#gradPurple)" stroke="#FFFFFF" stroke-width="3">አ</text>
+    <text x="125" y="0" fill="url(#gradCyan)" stroke="#FFFFFF" stroke-width="3">ካ</text>
+    <text x="195" y="0" fill="url(#gradGold)" stroke="#FFFFFF" stroke-width="3">ዳ</text>
+    <text x="265" y="0" fill="url(#gradPink)" stroke="#FFFFFF" stroke-width="3">ሚ</text>
+  </g>
+
+  <!-- Large English School Name: Safari Academy -->
+  <g transform="translate(560, 185)" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="72" font-weight="800" font-style="italic" filter="url(#textDropShadow)">
+    <text x="-260" y="0" fill="url(#gradBlue)" stroke="#FFFFFF" stroke-width="3">S</text>
+    <text x="-215" y="0" fill="url(#gradGreen)" stroke="#FFFFFF" stroke-width="3">a</text>
+    <text x="-175" y="0" fill="url(#gradGold)" stroke="#FFFFFF" stroke-width="3">f</text>
+    <text x="-145" y="0" fill="url(#gradPurple)" stroke="#FFFFFF" stroke-width="3">a</text>
+    <text x="-105" y="0" fill="url(#gradRed)" stroke="#FFFFFF" stroke-width="3">r</text>
+    <text x="-75" y="0" fill="url(#gradPink)" stroke="#FFFFFF" stroke-width="3">i</text>
+    
+    <text x="-10" y="0" fill="url(#gradRed)" stroke="#FFFFFF" stroke-width="3">A</text>
+    <text x="40" y="0" fill="url(#gradBlue)" stroke="#FFFFFF" stroke-width="3">c</text>
+    <text x="85" y="0" fill="url(#gradGreen)" stroke="#FFFFFF" stroke-width="3">a</text>
+    <text x="135" y="0" fill="url(#gradGold)" stroke="#FFFFFF" stroke-width="3">d</text>
+    <text x="185" y="0" fill="url(#gradPurple)" stroke="#FFFFFF" stroke-width="3">e</text>
+    <text x="235" y="0" fill="url(#gradCyan)" stroke="#FFFFFF" stroke-width="3">m</text>
+    <text x="285" y="0" fill="url(#gradPink)" stroke="#FFFFFF" stroke-width="3">y</text>
+  </g>
+
+  <!-- Official Mottos -->
+  <!-- Amharic Motto: 'ልጆችዎ ልጆቻችን ናቸው!' -->
+  <text x="560" y="242" text-anchor="middle" font-family="'Noto Sans Ethiopic', sans-serif" font-weight="700" font-size="28" fill="#1E3A8A" stroke="#FFFFFF" stroke-width="1.2" filter="url(#textDropShadow)">
+    'ልጆችዎ ልጆቻችን ናቸው!'
+  </text>
+
+  <!-- English Motto: 'Your kids our kids' -->
+  <text x="560" y="285" text-anchor="middle" font-family="'Plus Jakarta Sans', cursive, sans-serif" font-weight="700" font-size="26" font-style="italic" fill="#065F46" stroke="#FFFFFF" stroke-width="1.2" filter="url(#textDropShadow)">
+    'Your kids our kids'
+  </text>
+</svg>
